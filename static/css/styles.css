@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-600;
+}
+
+.nav-link {
+  @apply px-4 py-2 rounded-lg hover:bg-purple-500 hover:bg-opacity-20 transition-all duration-300;
+}

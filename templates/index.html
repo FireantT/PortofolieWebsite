@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #a855f7, #d946ef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .skill-bar {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .skill {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .skill-name {
+            font-size: 1rem;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-level {
+            background-color: #2d3748;
+            border-radius: 0.25rem;
+            overflow: hidden;
+            position: relative;
+            height: 1rem;
+        }
+
+        .skill-percentage {
+            background-color: #805ad5;
+            height: 100%;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+        }
+
+        .nav-link:hover {
+            color: #805ad5;
+            background-color: rgba(128, 90, 213, 0.2);
+        }
+
+        .project-container {
+    background-color: #2d3748;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(224, 224, 224, 0.2);
+        }
+        
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-800 to-gray-900 text-white min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-gray-900 bg-opacity-90 backdrop-blur-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-center">
+                <a href="#home" class="text-xl font-bold gradient-text"></a>
+                <div class="space-x-4">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="https://github.com/FireAntT" class="nav-link" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold mb-6">
+                     <span class="gradient-text">Thomas Helweg Arndal Hansen</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Full-stack developer who specializes in python but knows other languages as well.
+                </p>
+
+                <div class="flex justify-center mt-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-800 bg-opacity-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-gray-800 rounded-xl overflow-hidden hover:shadow-purple-500/20 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3"><a href="https://github.com/FireantT/FlutterFaceDetection">Facial detection/Smile Detection</h3></a>
+                        <p class="text-gray-400">A android app that uses flutter and machine learning to detect smiles and faces</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="px-3 py-1 bg-purple-500 bg-opacity-20 rounded-full text-sm">Dart</span>
+                            <span class="px-3 py-1 bg-purple-500 bg-opacity-20 rounded-full text-sm">Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl overflow-hidden hover:shadow-purple-500/20 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Portfolio</h3>
+                        <p class="text-gray-400">Project to make a Portfolio, you are actually viewing the project right now!</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="px-3 py-1 bg-purple-500 bg-opacity-20 rounded-full text-sm">FastAPI</span>
+                            <span class="px-3 py-1 bg-purple-500 bg-opacity-20 rounded-full text-sm">HTML</span>
+                            <span class="px-3 py-1 bg-purple-500 bg-opacity-20 rounded-full text-sm">CSS</span>
+                            <span class="px-3 py-1 bg-purple-500 bg-opacity-20 rounded-full text-sm">JavaScript</span>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-800 rounded-xl overflow-hidden hover:shadow-purple-500/20 hover:shadow-lg transition-all duration-300">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Project Three</h3>
+                        <p class="text-gray-400">PlaceHolder</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="px-3 py-1 bg-purple-500 bg-opacity-20 rounded-full text-sm">Next.js</span>
+                            <span class="px-3 py-1 bg-purple-500 bg-opacity-20 rounded-full text-sm">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 flex items-center justify-center min-h-screen">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                <div class="max-w-lg text-center">
+                    <p class="text-xl text-gray-400">I am a full-stack developer who specializes in python but knows other languages as well.
+                         I have a passion for cyber security also.</p>
+                    <div class="skill-bar mt-8">
+                        <div class="skill">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-level">
+                                <div class="skill-percentage" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-percentage" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">HTML</span>
+                            <div class="skill-level">
+                                <div class="skill-percentage" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name">CSS</span>
+                            <div class="skill-level">
+                                <div class="skill-percentage" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span class="skill-name
+                            ">Cyber Security</span>
+                            <div class="skill-level">
+                                <div class="skill-percentage" style="width: 90%;"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">Contact Me</h2>
+            <div class="max-w-lg mx-auto bg-gray-800 rounded-xl p-8">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Name</label>
+                        <input type="text" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none transition-all duration-300">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Email</label>
+                        <input type="email" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none transition-all duration-300">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Message</label>
+                        <textarea rows="4" class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 outline-none transition-all duration-300"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3 px-6 rounded-lg bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 transition-all duration-300 font-medium">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="static/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script src="static/js/skillbarProgress.js"></script>
+</body>
+</html>
